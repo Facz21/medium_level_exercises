@@ -114,4 +114,3 @@ def run_ice_cream_shop():
             print("Type a valid character (Numbers at 1 to 2)")
             p(5)
             cs()       
-
