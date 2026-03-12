@@ -115,4 +115,3 @@ def run_ice_cream_shop():
             p(5)
             cs()       
 
-run_ice_cream_shop() 
