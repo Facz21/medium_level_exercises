@@ -4,7 +4,8 @@ from magic_cafeteria import run_cafeteria as rc
 from cinema_ticket_system import run_cinema_ticket as rct
 from pet_shop_recommendation import run_pet_shop as rps
 from parking_lot_system import run_parking_lot as rpl
-
+from hair_salon import run_hair_salon as rhs
+from sport_shop import run_sport_store as rss
 
 def main():
 
@@ -43,6 +44,12 @@ def main():
             rpl()
 
         elif op == 7:
+            rhs()
+
+        elif op == 8:
+            rss()
+
+        elif op == 10:
             print("Closing program...")
             start = 0
 
