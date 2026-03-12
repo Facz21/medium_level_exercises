@@ -6,7 +6,7 @@ def run_sport_store():
     start = 1
 
     print(" ")
-    print("*"*50, "Sport Store Price Counter", "*"*50)
+    print("*"*50, "Sport Shop Price Counter", "*"*50)
     print(" ")
 
     while start != 0:

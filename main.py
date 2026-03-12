@@ -6,6 +6,7 @@ from pet_shop_recommendation import run_pet_shop as rps
 from parking_lot_system import run_parking_lot as rpl
 from hair_salon import run_hair_salon as rhs
 from sport_shop import run_sport_store as rss
+from spa_service_system import run_spa_services as rs
 
 def main():
 
@@ -15,14 +16,16 @@ def main():
 
         print("\nMAIN MENU")
         print("-"*40)
-        print("1. Age Validation")
+        print("1. Gym Age Validation")
         print("2. Ice Cream Shop")
         print("3. Magic Cafeteria")
         print("4. Cinema Ticket System")
         print("5. Pet Shop Recommendation")
         print("6. Parking Lot System")
-        print("7. Exit")
-
+        print("7. Hair Salon Schedule")
+        print("8. Sport Shop Price Counter")
+        print("9. Spa Service System")
+        print("21. Exit")
         op = int(input("Select an option: "))
 
         if op == 1:
@@ -49,7 +52,10 @@ def main():
         elif op == 8:
             rss()
 
-        elif op == 10:
+        elif op == 9:
+            rs()
+
+        elif op == 21:
             print("Closing program...")
             start = 0
 
