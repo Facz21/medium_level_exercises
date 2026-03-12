@@ -12,7 +12,12 @@ from supa_ice_cream import run_ice_cream_clients as ric
 from gym_performance import run_gym_performance as rgp
 from cafeteria_sales_system import run_cafeteria_discount as rcd
 from cinema_room_control import run_cinema_control as rcc
-
+from parking_control_system import run_parking_control as rpc
+from pet_shop_recommendation import run_pet_shop as rps
+from hair_salon_agenda import run_hair_salon as rha
+from language_center_evaluation import run_language_center as rlc
+from sport_store_inventory import run_sports_store_inventory as rssi
+from club_membership import run_recreation_club as rrc
 def main():
 
     start = 1
@@ -35,7 +40,14 @@ def main():
         print("12. Gym Weekly Performance")
         print("13. Cafeteria Sales Discount")
         print("14. Cinema Royal Control")
+        print("15. Parking Control System")
+        print("16. Pet Shop Sales System")
+        print("17. Run Hair Salon Agenda")
+        print("18. Language Center Evaluation")
+        print("19. Sport Shop Inventory")
+        print("20. Recreation Club Membership")
         print("21. Exit")
+
 
         op = int(input("Select an option: "))
 
@@ -76,11 +88,28 @@ def main():
             rgp() 
 
         elif op == 13:
-            rcd()  
+            rcd() 
         
         elif op == 14:
             rcc()  
+        
+        elif op == 15:
+            rpc()
 
+        elif op == 16:
+            rps()
+    
+        elif op == 17:
+            rha()
+
+        elif op == 18:
+            rlc()
+
+        elif op == 19:
+            rssi()
+
+        elif op == 20:
+            rrc()
         elif op == 21:
             print("Closing program...")
             start = 0
