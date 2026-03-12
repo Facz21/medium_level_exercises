@@ -200,8 +200,3 @@ Possible future improvements include:
 • adding automated tests
 • converting the project into a CLI application
 
----
-
-# Author
-
-Programming practice project focused on strengthening **problem solving and Python fundamentals**.
