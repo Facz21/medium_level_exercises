@@ -7,6 +7,11 @@ from parking_lot_system import run_parking_lot as rpl
 from hair_salon import run_hair_salon as rhs
 from sport_shop import run_sport_store as rss
 from spa_service_system import run_spa_services as rs
+from dance_academy import run_dance_academy as rdc
+from supa_ice_cream import run_ice_cream_clients as ric
+from gym_performance import run_gym_performance as rgp
+from cafeteria_sales_system import run_cafeteria_discount as rcd
+from cinema_room_control import run_cinema_control as rcc
 
 def main():
 
@@ -16,8 +21,8 @@ def main():
 
         print("\nMAIN MENU")
         print("-"*40)
-        print("1. Gym Age Validation")
-        print("2. Ice Cream Shop")
+        print("1. Ice Cream Shop")
+        print("2. Gym Age Validation")
         print("3. Magic Cafeteria")
         print("4. Cinema Ticket System")
         print("5. Pet Shop Recommendation")
@@ -25,14 +30,20 @@ def main():
         print("7. Hair Salon Schedule")
         print("8. Sport Shop Price Counter")
         print("9. Spa Service System")
+        print("10. Dance Academy Attendance")
+        print("11. Supa Ice Cream")
+        print("12. Gym Weekly Performance")
+        print("13. Cafeteria Sales Discount")
+        print("14. Cinema Royal Control")
         print("21. Exit")
+
         op = int(input("Select an option: "))
 
         if op == 1:
-            rg()
+            ri() 
 
         elif op == 2:
-            ri()
+            rg()
 
         elif op == 3:
             rc()
@@ -54,6 +65,21 @@ def main():
 
         elif op == 9:
             rs()
+
+        elif op == 10:
+            rdc()
+
+        elif op == 11:
+            ric()
+
+        elif op == 12:
+            rgp() 
+
+        elif op == 13:
+            rcd()  
+        
+        elif op == 14:
+            rcc()  
 
         elif op == 21:
             print("Closing program...")
