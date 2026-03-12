@@ -6,7 +6,10 @@ import time
 
 #We declare this function to clear the screen
 def clear_screen():
-    os.system("clear")
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def pause(seconds):
     time.sleep(seconds)
