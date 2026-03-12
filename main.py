@@ -2,6 +2,8 @@ from gym_acces import run_gym_acces as rg
 from ice_cream_shop import run_ice_cream_shop as ri
 from magic_cafeteria import run_cafeteria as rc
 from cinema_ticket_system import run_cinema_ticket as rct
+from pet_shop_recommendation import run_pet_shop as rps
+from parking_lot_system import run_parking_lot as rpl
 
 
 def main():
@@ -16,7 +18,9 @@ def main():
         print("2. Ice Cream Shop")
         print("3. Magic Cafeteria")
         print("4. Cinema Ticket System")
-        print("5. Exit")
+        print("5. Pet Shop Recommendation")
+        print("6. Parking Lot System")
+        print("7. Exit")
 
         op = int(input("Select an option: "))
 
@@ -31,7 +35,14 @@ def main():
         
         elif op == 4:
             rct()
+
         elif op == 5:
+            rps()
+
+        elif op == 6:
+            rpl()
+
+        elif op == 7:
             print("Closing program...")
             start = 0
 
