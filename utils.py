@@ -1,6 +1,7 @@
 import os
 import time
 
+
 def clear_screen():
     if os.name == "nt":
         os.system("cls")
@@ -29,3 +30,8 @@ def spinner():
         p(0.2)
 
     print()  
+    
+cs = clear_screen
+p = pause
+l = loader
+s = spinner
